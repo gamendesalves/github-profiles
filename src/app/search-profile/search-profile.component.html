@@ -1,0 +1,32 @@
+<div class="gitContainer text-center">
+    <div class="container">
+        <img src="../../assets/images/github.png" class="mb-3" alt="" width="52" height="52" title="GitHubProfile">
+        <h1 class="h3 mb-3" [ngClass]="{'text-black': !theme.toggle, 'text-white': theme.toggle}"> {{pageTitle}} </h1>
+        <app-theme #theme></app-theme>
+    </div>
+    <form [formGroup]="form">
+        <div class="container">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="button-addon2"
+                    (keyup)="onKey($event)" formControlName="username">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="button-addon2" [disabled]="!form.valid"
+                        (click)="onSubmit()">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div *ngIf="errorRequest || (form.controls['username'].invalid && form.controls['username'].dirty) "
+                class="alert alert-danger mt-3">
+                <div *ngIf="form.controls['username'].errors?.required ">
+                    Username is required
+                </div>
+                <div *ngIf="errorRequest">
+                    {{errorRequest}}
+                </div>
+            </div>
+        </div>
+    </form>
+    <app-profile-details *ngIf="loadProfile" [profile]='profile' [infoRepository]='infoRepos'></app-profile-details>
+</div>

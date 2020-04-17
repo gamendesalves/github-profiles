@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.background-purple {
+    background-color: #AF7AC5;
+}
+
+.background-white {
+    background-color: #FFF;
+}

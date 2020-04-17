@@ -1,0 +1,51 @@
+<div *ngIf='profile'>
+    <div class="card mb-3 mx-auto" style="max-width: 430px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img [src]='profile.avatar_url' class="card-img rounded">
+            </div>
+            <div class='card-body'>
+                <div class='row'>
+                    <div class="mx-auto">
+                        <div class="media">
+                            <img src="../../assets/images/github.png" width="29" height="28"
+                                class="align-self-start mr-3">
+                            <h6 class="mt-0 mx-auto">{{profile.login}}</h6>
+                        </div>
+                        <div class="media mt-2">
+                            <img src="../../assets/images/followers.png" width="29" height="28"
+                                class="align-self-start mr-3">
+                            <h6 class="mt-0 mx-auto">{{profile.followers}} followers</h6>
+                        </div>
+                        <div class="media mt-2">
+                            <img src="../../assets/images/repository.png" width="29" height="28"
+                                class="align-self-start mr-3">
+                            <h6 class="mt-0 mx-auto">{{profile.public_repos}} repos</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="infoRepository">
+        <div class="col-sm-6" *ngFor="let repos of infoRepository | slice:0:4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{repos.name}}</h5>
+                    <p class="card-text">{{repos.description || 'No description'}}</p>
+                    <div class="card-text">
+                        <img src="../../assets/images/fork.png" width="20" height="22"
+                            class="align-self-start mr-3 mb-2">
+                        <span>{{repos.forks}}</span>
+                    </div>
+                    <div class="card-text">
+                        <img src="../../assets/images/star.png" width="22" height="22"
+                            class="align-self-start mr-2 mb-2">
+                        <span>{{repos.watchers}}</span>
+                    </div>
+                    <a [href]='repos.svn_url' target="_blank" class="btn btn-primary">Go to repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
