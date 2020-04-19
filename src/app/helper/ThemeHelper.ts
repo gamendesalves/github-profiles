@@ -9,19 +9,19 @@ export default class ThemeHelper {
     }
 
     loadTheme() {
-        return localStorage.getItem('theme') || 'white';
+        return localStorage.getItem('theme') || 'green';
     }
 
-    themeWhite() {
-        this.removeClass('background-purple');
-        this.addClass('background-white');
-        this.saveTheme('white');
+    themeGreen() {
+        this.removeClass('background-blue');
+        this.addClass('background-green');
+        this.saveTheme('green');
     }
 
-    themePurple() {
-        this.removeClass('background-white');
-        this.addClass('background-purple');
-        this.saveTheme('purple');
+    themeBlue() {
+        this.removeClass('background-green');
+        this.addClass('background-blue');
+        this.saveTheme('blue');
     }
 
     addClass(value: string) {

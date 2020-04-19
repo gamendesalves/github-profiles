@@ -18,11 +18,11 @@ export class ThemeComponent implements OnInit {
 
   loadTheme() {
     const themeHelper = new ThemeHelper(this.render);
-    if (themeHelper.loadTheme() === 'purple') {
-      themeHelper.themePurple();
+    if (themeHelper.loadTheme() === 'blue') {
+      themeHelper.themeBlue();
       this.toggle = true;
     } else {
-      themeHelper.themeWhite();
+      themeHelper.themeGreen();
       this.toggle = false;
     }
   }
@@ -31,9 +31,9 @@ export class ThemeComponent implements OnInit {
     const themeHelper = new ThemeHelper(this.render);
     this.toggle = !this.toggle;
     if (!this.toggle) {
-      themeHelper.themeWhite();
+      themeHelper.themeGreen();
     } else {
-      themeHelper.themePurple();
+      themeHelper.themeBlue();
     }
   }
 
