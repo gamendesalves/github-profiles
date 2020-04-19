@@ -7,7 +7,7 @@
 </p>
 
 ### :computer: Projeto
-Este aplivativo utiliza API do GitHub para recuperar informações de usuários. Ao encontrar as informações é exibido da seguinte forma:
+Este aplicativo utiliza API do GitHub para recuperar informações de usuários. Ao encontrar as informações é exibido da seguinte forma:
 - Avatar
 - Nome de usuário 
 - Contagem de seguidores
