@@ -16,3 +16,11 @@
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}

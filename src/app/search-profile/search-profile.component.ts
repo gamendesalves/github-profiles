@@ -1,7 +1,7 @@
 import { InfoRepository } from '../model/InfoRepository';
 import { Profile } from '../model/Profile';
 import { SearchProfileService } from '../service/seach.profile.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -39,7 +39,7 @@ export class SearchProfileComponent implements OnInit {
 
             if (responseRepository.length >= 4) {
               responseRepository.sort((infoRepoA, infoRepoB) => {
-                return infoRepoA.watchers - infoRepoB.watchers;
+                return infoRepoB.watchers - infoRepoA.watchers;
               });
               this.infoRepos = responseRepository;
             }
