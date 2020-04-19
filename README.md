@@ -29,6 +29,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature`;
 - Faça push para a sua branch: `git push origin minha-feature`.
 
+### :computer: Teste o aplicativo
+<a href="https://gabrielmendes120.github.io/github-profiles/" target="_blank">`GitHub Profiles`</a>
+
 <hr></hr>
 
 Desenvolvido by <a href="https://www.linkedin.com/in/gabriel-mendes-81bb6514b/" target="_blank">`Gabriel Mendes Alves`</a>
