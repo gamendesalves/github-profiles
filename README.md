@@ -19,7 +19,7 @@ Além disso também é possivel trocar a cor do tema da página, deixando `ON - 
 ### :rocket: Tecnologias usadas
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Angular 9](https://angular.io/)
+- [Angular](https://angular.io/)
 - [Typescript](https://www.typescriptlang.org/)
 
 ### :thinking: Como contribuir
