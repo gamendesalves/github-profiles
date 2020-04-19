@@ -3,7 +3,7 @@
 </h2>
 
 <p align="center">
-  <img src="https://imgbbb.com/images/2020/04/19/print43bd69c7cd2d72a8.png">
+  <img src="https://s4.gifyu.com/images/video36846f66bf578243.gif">
 </p>
 
 ### :computer: Projeto
