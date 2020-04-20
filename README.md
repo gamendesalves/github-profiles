@@ -12,7 +12,7 @@ Este aplicativo utiliza API do GitHub para recuperar informações de usuários.
 - Nome de usuário 
 - Contagem de seguidores
 - Contagem de repositórios
-- Os 4 principais repositórios baseados em garfos e estrelas
+- Os 4 principais repositórios baseados em fork e stars
 
 Além disso também é possivel trocar a cor do tema da página, deixando `ON - Azul` ou `OFF - Verde`
 
