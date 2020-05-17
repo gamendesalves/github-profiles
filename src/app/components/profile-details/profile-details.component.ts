@@ -1,5 +1,5 @@
-import { InfoRepository } from '../model/InfoRepository';
-import { Profile } from '../model/Profile';
+import { InfoRepository } from '../../model/InfoRepository';
+import { Profile } from '../../model/Profile';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

@@ -1,7 +1,7 @@
-import { InfoRepository } from '../model/InfoRepository';
-import { Profile } from '../model/Profile';
-import { SearchProfileService } from '../service/seach.profile.service';
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { InfoRepository } from '../../model/InfoRepository';
+import { Profile } from '../../model/Profile';
+import { SearchProfileService } from '../../service/search.profile.service';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({

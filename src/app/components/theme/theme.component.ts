@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import ThemeHelper from '../helper/ThemeHelper';
+import ThemeHelper from '../../helper/ThemeHelper';
 
 @Component({
   selector: 'app-theme',
