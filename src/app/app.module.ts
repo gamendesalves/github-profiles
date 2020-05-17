@@ -1,4 +1,4 @@
-import { SearchProfileService } from './service/search.profile.service';
+import { SearchProfileService } from './services/search.profile.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms'
